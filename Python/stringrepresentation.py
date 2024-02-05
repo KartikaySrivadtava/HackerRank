@@ -2,8 +2,8 @@
 
 #Initialize Car class
 class Car:
+    #Initilizing constructor
     def __init__(self, max_speed, unit):
-        #Initilizing constructor
         self.max_speed = max_speed
         self.unit = unit
 
