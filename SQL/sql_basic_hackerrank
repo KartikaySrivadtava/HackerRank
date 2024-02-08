@@ -1,0 +1,7 @@
+#SQL query to find student roll number and name based on the corresponding advisor having male or female as gender and salary constraints (along with alias names of corresponding tables)
+
+SELECT roll_number,name
+FROM student_information si
+INNER JOIN faculty_information fi
+ON si.advisor = fi.employee_ID
+WHERE (fi.gender = 'M' and fi.salary>15000) or (fi.gender = 'F' and fi.salary>20000);
