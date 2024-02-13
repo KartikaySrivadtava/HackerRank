@@ -3,7 +3,7 @@
 #Select relevant columns using alias name
 SELECT c.country_name, count(*), AVG(i.total_price) 
 #providing alias name to tables
-FROM country c, city ci, customer cu, invoice i (providing alias name to tables)
+FROM country c, city ci, customer cu, invoice i
 #Join the respective tables
 WHERE c.id = ci.country_id AND ci.id = cu.city_id AND cu.id = i.customer_id
 #Group by country name as per requirement
